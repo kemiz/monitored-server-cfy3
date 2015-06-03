@@ -5,7 +5,7 @@ node_types:
   # server, and adds monitoring capabillities on top of it.
   ###########################################################
 
-  vm_host:
+  cloudify.openstack.nodes.MonitoredServer:
     derived_from: cloudify.openstack.nodes.Server
     properties:
       cloudify_agent:
